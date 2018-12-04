@@ -202,26 +202,6 @@ def plotClustered():
     types[labels[i]].append(wine)
   for i in range(0, 3):
     types[i] = np.array(types[i], dtype='float64')
-  plt.scatter(types[0][:, 0], types[0][:, 1], c='blue')
-  plt.scatter(types[1][:, 0], types[1][:, 1], c='red')
-  plt.scatter(types[2][:, 0], types[2][:, 1], c='yellow')
-  plt.show()
-
-
-def plotUnClustered():
-  preK = cluster()
-  preK.fit(dataW)
-  labels = preK.labels_
-  types = {0: [],
-             1: [],
-             2: []}
-  for i in range(len(dataW)):
-    alcoholContent = dataW[i][0]
-    hue = dataW[i][10]
-    wine = [alcoholContent, hue]
-    types[labels[i]].append(wine)
-  for i in range(0, 3):
-    types[i] = np.array(types[i], dtype='float64')
   plt.ylabel('Alcohol Content')
   plt.xlabel('Hue')
   plt.scatter(types[0][:, 0], types[0][:, 1], c='blue')
