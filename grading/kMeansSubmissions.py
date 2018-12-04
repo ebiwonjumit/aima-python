@@ -4,7 +4,7 @@ from grading.util import roster, print_table
 import os
 from sklearn.cluster import KMeans
 from sklearn import metrics
-from numpy import unique
+# from numpy import unique
 # import matplotlib.pyplot as plt
 # from mpl_toolkits.mplot3d import Axes3D
 #

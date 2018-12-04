@@ -1,0 +1,7 @@
+Data I used is the wine classification data from https://archive.ics.uci.edu/ml/datasets/wine
+It uses chemical analysis to determine the origin of wines
+
++10 was able to make it plot a graph using information from https://www.geeksforgeeks.org/graph-plotting-in-python-set-1/
++5 using the minMaxScaler was able to scale my data
+
+total: 75+10+5 = 90
